@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<!--
+	Personal academic site of Vincent Bio Bediako — Research page.
+	Adapted from "Strongly Typed" by HTML5 UP (https://html5up.net)
+	Template released under the CC Attribution 3.0 license; attribution preserved in footer.
+-->
+<html lang="en">
+	<head>
+		<title>Research &middot; Vincent Bio Bediako</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Research themes of Vincent Bio Bediako: climate and population health, health inequalities, and spatial demography in sub-Saharan Africa." />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Fix for banner image path and text legibility */
+			#banner {
+				background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("images/banner.jpg") !important;
+				background-size: cover !important;
+				background-position: center center !important;
+			}
+			/* Research page refinements — kept inline to avoid editing template CSS */
+			.research .theme-meta {
+				display: block;
+				margin-top: -0.4em;
+				margin-bottom: 1em;
+				font-style: italic;
+				color: #666;
+			}
+			.research .selected-work {
+				background: rgba(0,0,0,0.025);
+				border-left: solid 3px #888;
+				padding: 1em 1.25em;
+				margin: 1.5em 0 1em 0;
+			}
+			.research .selected-work .label {
+				display: block;
+				font-size: 0.8em;
+				letter-spacing: 0.15em;
+				text-transform: uppercase;
+				color: #666;
+				margin-bottom: 0.4em;
+			}
+			.research .selected-work ul {
+				margin: 0.4em 0 0 1.1em;
+				padding-left: 0;
+			}
+			.research .selected-work ul li {
+				margin-bottom: 0.4em;
+			}
+			.research .toc {
+				background: rgba(0,0,0,0.02);
+				padding: 1em 1.5em;
+				margin-bottom: 2em;
+				font-size: 0.95em;
+			}
+			.research .toc strong {
+				display: block;
+				margin-bottom: 0.4em;
+				font-size: 0.85em;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				color: #555;
+			}
+			.research .toc a {
+				margin-right: 1.2em;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Vincent Bio Bediako</a></h1>
+							<p>Demographer &nbsp;&middot;&nbsp; Data Scientist &nbsp;&middot;&nbsp; Researcher</p>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li><a class="icon solid fa-home" href="index.html"><span>Home</span></a></li>
+									<li class="current_page_item"><a class="icon solid fa-flask" href="research.html"><span>Research</span></a></li>
+									<li><a class="icon solid fa-book" href="publications.html"><span>Publications</span></a></li>
+									<li><a class="icon solid fa-file" href="cv.html"><span>Curriculum Vitae</span></a></li>
+									<li><a class="icon solid fa-envelope" href="contact.html"><span>Contact</span></a></li>
+								</ul>
+							</nav>
+
+					</div>
+				</section>
+
+			<!-- Banner -->
+				<section id="banner">
+					<div class="container">
+						<p><strong>Research.</strong> Population health at the intersection of climate, geography, and inequality.</p>
+					</div>
+				</section>
+
+			<!-- Main: research themes -->
+				<section id="main">
+					<div class="container">
+						<div id="content" class="research">
+
+							<!-- Lead paragraph and table of contents -->
+								<article class="box post">
+									<header>
+										<h2>Programme of work</h2>
+									</header>
+									<p>My research examines how environmental exposures, geographic context, and social inequality jointly shape population health outcomes &mdash; particularly maternal, perinatal, and child health in sub-Saharan Africa. The work is organised around three connected themes. The first asks how climate variability, and extreme heat in particular, affects demographic outcomes for pregnant women and infants. The second examines how ethnic and geographic stratification produces inequalities in survival and health-service access, and how these inequalities are concealed or revealed by the way population statistics are aggregated. The third develops the spatial and computational infrastructure required to bring environmental, conflict, and survey data into a single analytical frame.</p>
+
+									<p>Across all three themes I draw on the Demographic and Health Surveys, high-resolution environmental reanalysis, and event-level conflict data, applying multilevel and Bayesian spatiotemporal models. Where data licences permit, replication code accompanies published work, and methodological tools are released as documented repositories.</p>
+
+									<div class="toc">
+										<strong>On this page</strong>
+										<a href="#climate"><i class="icon solid fa-thermometer-three-quarters"></i> Climate &amp; Population Health</a>
+										<a href="#inequalities"><i class="icon solid fa-balance-scale"></i> Health Inequalities</a>
+										<a href="#spatial"><i class="icon solid fa-globe-africa"></i> Spatial Demography</a>
+									</div>
+								</article>
+
+							<!-- Theme 1: Climate & Population Health -->
+								<article id="climate" class="box post">
+									<header>
+										<h2>Climate &amp; Population Health</h2>
+									</header>
+									<span class="theme-meta">Heat exposure, healthcare access, and maternal&ndash;perinatal outcomes in Ghana</span>
+
+									<p>Climate change is increasingly recognised as a demographic question. Rising temperatures, more frequent heat extremes, and shifting precipitation patterns have measurable consequences for fertility, pregnancy outcomes, and infant survival &mdash; particularly in low-income tropical settings where baseline thermal stress is already high and health-system capacity to mitigate exposure is constrained. Yet the demographic literature has only recently begun to integrate the high-resolution climate data necessary to quantify these relationships precisely.</p>
+
+									<p>My dissertation links ERA5-HEAT reanalysis data with the Ghana Demographic and Health Surveys (2003&ndash;2022) to estimate the effects of extreme heat exposure on pregnancy outcomes and infant survival. Methodologically, the work moves away from absolute heat thresholds in favour of <em>location-specific percentile thresholds</em> &mdash; defining exposure relative to each cluster&rsquo;s historical distribution &mdash; on the grounds that vulnerability is context-dependent and absolute thresholds misrepresent local risk. The analytical framework draws on Bayesian spatiotemporal modelling, distributed lag non-linear models, and a target-trial emulation approach to causal inference.</p>
+
+									<p>A second strand of this theme examines how healthcare access mediates the relationship between heat exposure and infant mortality. The hypothesis is that the demographic consequences of climate stress are unevenly distributed not only by exposure but by the capacity of local health systems to absorb that stress. Forthcoming work extends the framework beyond Ghana to a multi-country comparison of climate-vulnerable settings in sub-Saharan Africa, and connects the empirical findings to the policy infrastructure emerging from the COP30 Belém Health Action Plan.</p>
+
+									<div class="selected-work">
+										<span class="label">Selected work under this theme</span>
+										<ul>
+											<li>Dissertation chapters on heat exposure, healthcare access, and infant mortality in Ghana (in preparation).</li>
+											<li>Co-led grant application to WHO/HRP on community experiences of extreme heat and maternal sexual and reproductive health rights outcomes in Ghana, with the University of Cape Coast (under review).</li>
+											<li>Penn Global Dissertation Grant and Burroughs Wellcome Fund Climate Change and Human Health Seed Grant applications.</li>
+										</ul>
+									</div>
+
+									<ul class="actions">
+										<li><a href="publications.html" class="button icon solid fa-book">Related publications</a></li>
+									</ul>
+								</article>
+
+							<!-- Theme 2: Health Inequalities -->
+								<article id="inequalities" class="box post">
+									<header>
+										<h2>Health Inequalities</h2>
+									</header>
+									<span class="theme-meta">Ethnic and geographic disparities in survival and health-service access</span>
+
+									<p>National-level summary statistics are an indispensable tool for population health surveillance, yet they routinely conceal the heterogeneity that is most consequential for policy. A national under-five mortality rate, for example, can mask differences across ethnic groups, regions, and language communities that are an order of magnitude larger than year-to-year change in the national figure. The methodological and substantive question is how to characterise this heterogeneity rigorously, and how to distinguish disparities that are properly understood as ethnic from those that are an artefact of geographic distribution.</p>
+
+									<p>My recent article in <em>SSM-Population Health</em> examines ethnic disparities in under-five mortality across fourteen sub-Saharan African countries. Using survey-weighted multilevel models with sensitivity tests for the role of administrative geography, the analysis finds that ethnic disparities are partially &mdash; but unevenly &mdash; mediated by geographic location. The implication is that disparity statistics are sensitive to the level of geographic adjustment, and that surveillance systems reporting ethnic gaps without geographic decomposition will systematically misstate the relative contribution of ethnic stratification to overall inequality.</p>
+
+									<p>Related work, much of it co-authored, examines disparities in health-service access &mdash; skilled birth attendance, antenatal care utilisation, intermittent preventive treatment uptake, and home-birth practices &mdash; across a range of sub-Saharan African contexts. A common methodological thread is the use of multilevel models to separate individual, household, community, and country-level contributions to observed disparities. Future work will extend the inequality framework to fertility transitions and to cross-country comparisons of educational attainment.</p>
+
+									<div class="selected-work">
+										<span class="label">Selected work under this theme</span>
+										<ul>
+											<li>Bediako, V. B. (2025). Hidden by national averages: ethnic disparities in under-five survival across sub-Saharan Africa. <em>SSM-Population Health</em>. <a href="publications.html#ssm2025">View entry</a>.</li>
+											<li>Bediako, V. B., Boateng, E. N. K., Owusu, B. A., &amp; Dickson, K. S. (2021). Multilevel geospatial analysis of factors associated with unskilled birth attendance in Ghana. <em>PLoS ONE</em>.</li>
+											<li>Co-investigator on a 2025&ndash;2026 study, with the University of Cambridge REAL Centre, of home-school language alignment and reading skills among Primary 3 children in Ghana.</li>
+										</ul>
+									</div>
+
+									<ul class="actions">
+										<li><a href="publications.html" class="button icon solid fa-book">Related publications</a></li>
+									</ul>
+								</article>
+
+							<!-- Theme 3: Spatial Demography -->
+								<article id="spatial" class="box post">
+									<header>
+										<h2>Spatial Demography</h2>
+									</header>
+									<span class="theme-meta">Methods, computational infrastructure, and reproducible pipelines</span>
+
+									<p>The substantive themes above depend on a methodological foundation: the rigorous linkage of population surveys with environmental, conflict, and administrative data, and the use of models that respect the spatial and hierarchical structure of those data. This third theme treats methodology as a research output in its own right rather than purely as a means to substantive ends. Tools developed in the course of dissertation and collaborative work are released as documented repositories, with the goal of reducing the start-up cost for other researchers working on similar questions.</p>
+
+									<p>Methodological work in progress includes a generalisable pipeline for linking Demographic and Health Survey clusters with high-resolution heat-stress reanalysis data (ERA5-HEAT), a target-trial emulation framework for causal inference under non-randomised exposure in observational survey data, and Bayesian spatiotemporal models implemented in R-INLA using the BYM2 specification. A separate methodological strand addresses computational infrastructure: a recent project on conflict and child nutrition in Nigeria required fitting thousands of fixed-effects models in parallel on Windows, motivating the development of a disk-based parallel-worker architecture using independent <code>Rscript</code> processes coordinated through disk files. The utility is generalisable beyond the original use case.</p>
+
+									<p>A commitment to reproducibility runs through this theme. Replication code accompanies published work where data licences permit. Where the underlying data are restricted &mdash; as is the case for DHS individual records, the SCAD conflict database, and the MLSFH cohort &mdash; pipelines are written so that they operate against user-supplied extracts, with the data-access process documented separately.</p>
+
+									<div class="selected-work">
+										<span class="label">Selected methodological projects</span>
+										<ul>
+											<li>DHS &times; ERA5-HEAT linkage pipeline, R-based, documented for re-use across sub-Saharan African contexts.</li>
+											<li>Disk-based parallel R worker utility for high-throughput model fitting on Windows.</li>
+											<li>Replication materials for the <em>SSM-Population Health</em> ethnic-disparities analysis (in preparation).</li>
+										</ul>
+									</div>
+
+									<ul class="actions">
+										<li><a href="publications.html" class="button icon solid fa-book">Related publications</a></li>
+									</ul>
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<header>
+							<h2>Get in <strong>touch</strong>.</h2>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<section>
+									<p>I welcome enquiries about research collaborations, data analysis projects, and opportunities at the intersection of demography, climate, and population health. Email is the most reliable route; I aim to reply within a week.</p>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<ul class="icons">
+												<li class="icon solid fa-home">
+													Philadelphia, PA<br />
+													United States
+												</li>
+												<li class="icon solid fa-envelope">
+													<a href="mailto:vbediako@sas.upenn.edu">vbediako@sas.upenn.edu</a>
+												</li>
+											</ul>
+										</div>
+										<div class="col-6 col-12-small">
+											<ul class="icons">
+												<li class="icon brands fa-linkedin">
+													<a href="https://www.linkedin.com/in/vincent-bio-bediako/">LinkedIn</a>
+												</li>
+												<li class="icon brands fa-github">
+													<a href="https://github.com/YOUR-GITHUB-USERNAME">GitHub</a>
+												</li>
+												<li class="icon brands fa-orcid">
+													<a href="https://orcid.org/0000-0002-6957-3216">ORCID</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					<div id="copyright" class="container">
+						<ul class="links">
+							<li>&copy; 2026 Vincent Bio Bediako. All rights reserved.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
